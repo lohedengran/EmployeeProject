@@ -1,0 +1,24 @@
+﻿@model Employee[]
+@{ 
+    ViewBag.Title = "Employees";
+    ViewBag.Header = "List of employees";
+    }
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   
+    <title>Employees</title>
+</head>
+<body>
+    <div>
+      
+        <ul>
+            @foreach (var item in Model)
+            {
+
+                <li>@item.Name</li>
+            }
+        </ul>
+    </div>
+</body>
+</html>
